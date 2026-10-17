@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - SeweIA - </title>
+    <!-- Mapeo estricto del dominio para GitHub Pages seweIA.github.io -->
+    <base href="/" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- Pantalla de carga limpia estilo Turno Ya -->
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; background-color: #E6E6E6;">
+            <div style="border: 4px solid rgba(0, 90, 156, 0.1); width: 36px; height: 36px; border-radius: 50%; border-left-color: #005A9C; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
+            <p style="color: #718096; font-size: 14px; font-weight: 600;">LOADING_SeweIA_ADMIN.EXE...</p>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui" style="display:none;">
+        Ha ocurrido un error inesperado.
+        <a href="" class="reload">Recargar</a>
+    </div>
+
+    <!-- El script que inicializa el motor estático en el navegador del cliente -->
+    <script src="_framework/blazor.webassembly.js"></script>
+
+    <style>
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+
+</html>
